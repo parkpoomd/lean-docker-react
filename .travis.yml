@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t parkpoom/docker-react -f Dockerfile.dev .
+  - docker build -t parkpoom/lean-docker-react -f Dockerfile.dev .
 
 script:
-  - docker run parkpoom/docker-react npm run test -- --coverage
+  - docker run parkpoom/lean-docker-react npm run test -- --coverage
